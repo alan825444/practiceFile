@@ -127,7 +127,6 @@
     .company-card-content {
       display: flex;
       flex-direction: row;
-      gap: 12px;
       min-width: 0;
     }
 
@@ -185,9 +184,7 @@
     }
 
     .companu-small-icon {
-
-      display: flex;
-      align-items: flex-start;
+      display: inline-block;
       flex-direction: column;
     }
 
@@ -204,6 +201,10 @@
 
     .companu-small-icon .text-wrap p {
       font-size: 18px;
+    }
+
+    .text-wrap p {
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -252,74 +253,83 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col-sm-12  mr-2">
+
         <div class="row">
-          <div class="col-sm-12 company-card">
+          praesentium <div class="col-sm-12 company-card">
             <div class="company-card-logo">
               <a href="#">
                 <img src="./image/mcdonalds-logo.webp" alt="">
               </a>
             </div>
-            <div class="company-card-content">
-              <div>
-                <p class="company-name ">Firmware Engineer, Battery and Charging, Google Pixel (English)</p>
-                <p class="company-co">Google Taiwan </p>
-                <i class="bi bi-geo-alt"></i>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Bland
-                  itiis dolore fuga voluptas quaerat? Ducimus consectetur cupiditate expedita mi
-                  nima nostrum voluptatem, libero deleniti praesentium corporis porro. Ab sed optio ear
-                  um repudiandae culpa ea asperiores reiciendis! Consect
-                  etur earum veniam dolorem dolores quas libero quidem aspernatur, sit q
-                  uae, reiciendis et quibusdam culpa sequi.
-                </p>
-              </div>
-              <div class="companu-small-icon">
-                <div style="display: inline-flex">
-                  <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
-                  <div class="text-wrap">
-                    <p>全職/兼職</p>
+            <div>
+              <div class="company-card-content row">
+                <div class="col-lg-9">
+                  <div>
+                    <p class="company-name ">Firmware Engineer, Battery and Charging, Google Pixel (English)</p>
+                    <p class="company-co">Google Taiwan </p>
+                    <i class="bi bi-geo-alt"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Bland
+                      itiis dolore fuga voluptas quaerat? Ducimus consectetur cupiditate expedita mi
+                      nima nostrum voluptatem, libero deleniti praesentium corporis porro. Ab sed optio ear
+                      um repudiandae culpa ea asperiores reiciendis! Consect
+                      etur earum veniam dolorem dolores quas libero quidem aspernatur, sit q
+                      uae, reiciendis et quibusdam culpa sequi.
+                    </p>
+                    <div style="clear: both;"></div>
                   </div>
                 </div>
-                <div style="display: inline-flex">
-                  <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
-                  <div class="text-wrap">
-                    <p>Banqiao District, New Taipei City, Taiwan 220</p>
+                <div class="companu-small-icon col-lg-3">
+                  <div style="display: inline-flex">
+                    <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
+                    <div class="text-wrap">
+                      <p>全職/兼職</p>
+                    </div>
                   </div>
-                </div>
-                <div style="display: inline-flex">
-                  <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
-                  <div class="text-wrap">
-                    <p>80萬 ~ 100萬 TWD/年</p>
+                  <div style="display: inline-flex">
+                    <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
+                    <div class="text-wrap">
+                      <p>Banqiao District, New Taipei City, Taiwan 220</p>
+                    </div>
                   </div>
-                </div>
-                <div style="display: inline-flex">
-                  <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
-                  <div class="text-wrap">
-                    <p>
-                      需具備 5 年以上工作經驗</p>
+                  <div style="display: inline-flex">
+                    <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
+                    <div class="text-wrap">
+                      <p>80萬 ~ 100萬 TWD/年</p>
+                    </div>
                   </div>
-                </div>
-                <div style="display: inline-flex">
-                  <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
-                  <div class="text-wrap">
-                    <p>管理 1 ~ 5 人</p>
+                  <div style="display: inline-flex">
+                    <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
+                    <div class="text-wrap">
+                      <p>
+                        需具備 5 年以上工作經驗</p>
+                    </div>
                   </div>
-                </div>
-                <div style="clear: both;"></div>
-              </div>
+                  <div style="display: inline-flex">
+                    <div class="icon-wrap"><i class="fa fa-user fa-lg"></i></div>
+                    <div class="text-wrap">
+                      <p>管理 1 ~ 5 人</p>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </div>
 
+                </div>
+              </div>
+              <div class="row">
+                <p class="col-lg-9">123</p>
+                <p class="col-lg-3">123</p>
+              </div>
             </div>
-            <div></div>
           </div>
           <div class="col-sm-12 company-card"></div>
         </div>
       </div>
-      <!-- <div class="col-md-3 ml-2 d-none d-sm-block">
-          <div class="ad-card">
-            <div class="ad_head"></div>
-            <div class="advertisement" style="height: 500px;"></div>
-          </div>
-          
-        </div> 廣告看板-->
+      <div class="col-md-3 ml-2 d-none d-sm-block">
+        <!-- <div class="ad-card">
+          <div class="ad_head"></div>
+          <div class="advertisement" style="height: 500px;"></div>
+        </div> -->
+
+      </div> 廣告看板
     </div>
   </div>
 </body>
